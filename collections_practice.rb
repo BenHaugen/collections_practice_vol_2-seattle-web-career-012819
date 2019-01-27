@@ -30,7 +30,7 @@ end
  
  
  def merge_data(keys, data)
-   keys.each do |first_name, name|
+   data.each do |first_name, name|
      
        binding.pry
      
