@@ -28,7 +28,15 @@ end
  def count_elements(array)
  end 
  
- def
+ def merge_data(keys, data)
+  keys.each do |name_hash|
+    data.each do |hash|
+      name_hash.merge!(hash[name_hash[:first_name]])
+    end
+  end
+end
+ 
+ #Built this out mostly myself, looked at past pulls for the ending, but still didn't work :(
  
  #def merge_data(keys, data)
 #   merged_data = []
