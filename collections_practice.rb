@@ -37,7 +37,7 @@ end
             hash.each do |key2, value2|
           if value == key2
            hash[key2][key] = value
-           merged_data = value2
+           merged_data << value2
           end
         end
       end
