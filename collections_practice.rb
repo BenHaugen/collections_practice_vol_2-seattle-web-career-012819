@@ -25,8 +25,17 @@ end
    end
  end
  
- def count_elements(array)
- end 
+def count_elements(array)
+  counted = []
+  array.each do |item|
+    binding.pry
+    item[:count] = array.count(item)
+    counted << item
+  end
+  return counted.uniq{ |item|
+    item[:name]
+  }
+end
  
  def merge_data(keys, data)
   keys.each do |name_hash|
