@@ -29,7 +29,11 @@ end
  end 
  
  
- 
+ def merge_data(data1, data2)
+   
+   
+   
+   
  def find_cool(array) 
    array.select do |hashes|
      hashes.has_value?("cool")
