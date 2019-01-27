@@ -54,6 +54,22 @@ end
   # end
   # merged_data
 # end
+#
+# Antother answer on pull that made sense to me
+#def merge_data(keys,data)
+#	merged = []
+#	keys.each do |key_first|
+#	data.each do |person|
+#		person.each do |k,v|
+#	if key_first[:first_name] == k
+#		v[:first_name] = k
+#	merged << v
+#	 end
+#	end
+#	end
+#	end
+#	merged
+#end
 
    
  def find_cool(array) 
