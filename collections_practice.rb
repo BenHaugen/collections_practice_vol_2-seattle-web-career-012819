@@ -31,7 +31,11 @@ end
  
  def merge_data(keys, data)
    keys.each do |first_name, name|
-     data.each |
+     data.each do |name1, attributes|
+       binding.pry
+     end 
+   end
+ end
    
    
    
