@@ -36,7 +36,7 @@ end
         hash.each do |key2, value2|
           if value == key2
             name_hash.merge(hash)
-       binding.pry
+       
           end
         end
       end
