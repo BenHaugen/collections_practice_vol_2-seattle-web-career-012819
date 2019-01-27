@@ -25,10 +25,10 @@ end
    end
  end
  
+#I did not understand this one at all 
 def count_elements(array)
   counted = []
   array.each do |item|
-    binding.pry
     item[:count] = array.count(item)
     counted << item
   end
