@@ -28,24 +28,24 @@ end
  def count_elements(array)
  end 
  
- 
- def merge_data(keys, data)
-   merged_data = []
-   keys.each do |name_hash|
-       name_hash.each do |key, value|
-         data.each do |hash|
-            hash.each do |key2, value2|
-          if key2 == value
-           storage_hash = [{:first_name => key2}]
-           storage_hash << value2
-           merged_data << storage_hash[0].merge(storage_hash[1])
+ def merge_data(names, data)
+  return_hash=[]
+  names.each do |name_hash|
+    name_hash.each do |name_attribute, value|
+      data.each do |data_hash|
+        data_hash.each do |name, data_attribute|
+          if name == value
+            storage_hash=[{:first_name=>name}]
+            storage_hash<< data_attribute
+            return_hash<< storage_hash[0].merge(storage_hash[1])
           end
         end
       end
-     end
-   end
-   merged_data
- end
+    end
+  end
+  return_hash
+end
+
    
    
    
