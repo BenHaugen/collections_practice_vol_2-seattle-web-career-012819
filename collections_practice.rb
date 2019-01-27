@@ -30,12 +30,13 @@ end
  
  
  def merge_data(keys, data)
+   merged_data = []
    keys.each do |name_hash|
        name_hash.each do |key, value|
          data.each do |hash|
             hash.each do |key2, value2|
           if value == key2
-            name_hash.merge(hash)
+            hash.merge(name_hash)
        
           end
         end
