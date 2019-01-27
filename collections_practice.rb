@@ -31,7 +31,7 @@ end
  
  def merge_data(keys, data)
    keys.each do |name_hash|
-     name_hash.each do |symbol, data|
+     data.each do |hash|
      
        binding.pry
      end
