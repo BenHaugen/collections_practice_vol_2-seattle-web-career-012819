@@ -32,9 +32,11 @@ end
  def merge_data(keys, data)
    keys.each do |name_hash|
      data.each do |hash|
+       name_hash.each do |key, value|
        
      
        binding.pry
+      end
      end
    end
  end
